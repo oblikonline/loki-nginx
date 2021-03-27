@@ -1,4 +1,4 @@
-
+https://habr.com/ru/company/badoo/blog/507718/
 Small environment for testing parsing nginx logs by promtail.  
 
 ### Install
