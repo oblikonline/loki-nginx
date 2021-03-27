@@ -1,15 +1,14 @@
+# [Small environment for testing parsing nginx logs by promtail.](https://habr.com/ru/company/badoo/blog/507718/)
 
-[Small environment for testing parsing nginx logs by promtail.](https://habr.com/ru/company/badoo/blog/507718/)  
+## Install
 
-### Install
+docker-compose up
 
-docker-compose up 
-
-### Usage
+## Usage
 
 Contains:
 
-1. Prometheus - for metrics 
+1. Prometheus - for metrics
 2. Grafana - for graphs
 3. Loki - for logs
 4. Promtail - for logs delivery
@@ -18,15 +17,10 @@ Contains:
 Prober starts generating logs immediately. You can change its options by modifying conf.yaml.
 Conf.yaml defines all possible entry points and what http status, response size, response time they will have
 
-Type http://localhosy:3000 to enter into grafana interface.
-Credentials are admin:admin. 
+Type <http://localhosy:3000> to enter into grafana interface.
+Credentials are admin:admin.
 It has two predefined dashboards: Projects and Monitoring services
 
 Dashboard Projects shows metrics from nginx
 
 Dashboard Monitoring services shows metrics about monitoring services such as loki or prometheus
-
-
- 
-
- 
